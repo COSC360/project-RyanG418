@@ -1,0 +1,40 @@
+function validateForm() {   
+    let x = document.forms["myForm"]["password1"].value;
+    let y =document.forms["myForm"]["password2"].value;
+    let z = document.forms["myForm"]["username"].value;
+    if (!x==y) {
+      alert("passwords must match");
+      return false;
+    } else if(x==""){
+        alert("password must be filled");
+        return false;
+    } else if(y==""){
+        alert("both passwords must be filled in");
+        return false;
+    } else if(z==""){
+        alert("username must be filled in");
+        return false;
+    }
+  }
+  function validateLogin() {   
+    let x = document.forms["login"]["password1"].value;
+    let z = document.forms["login"]["username"].value;
+    if(x==""){
+        alert("password must be filled");
+        return false;
+    } else if(z==""){
+        alert("username must be filled in");
+        return false;
+    }
+  }
+  function validatePost() {   
+    let x = document.forms["post"]["password1"].value;
+    let z = document.forms["post"]["username"].value;
+    if(x==""){
+        alert("password must be filled");
+        return false;
+    } else if(z==""){
+        alert("username must be filled in");
+        return false;
+    }
+  }
