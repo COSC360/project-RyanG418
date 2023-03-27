@@ -23,10 +23,10 @@
 <button <?php echo $hidden2;?> onclick='window.location.href="newpost.php";'>NEW POST</button>
 <?php
 
-$server_name = "localhost";
-$user_name = "root";
-$password = "";
-$database_name = "forumsdb";
+$host = 'cosc360.ok.ubc.ca';
+$username = '59919308';
+$password = '59919308';
+$dbname = 'db_59919308';
 $connection = mysqli_connect($server_name, $user_name, $password,$database_name);
 $username=$_SESSION['username'];
 $uid=$_SESSION['uid'];

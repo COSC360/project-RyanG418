@@ -26,10 +26,10 @@
 
 <?php
 
-$server_name = "localhost";
-$user_name = "root";
-$password = "";
-$database_name = "forumsdb";
+$host = 'cosc360.ok.ubc.ca';
+$username = '59919308';
+$password = '59919308';
+$dbname = 'db_59919308';
 $username=$_POST['username'];
 $connection = mysqli_connect($server_name, $user_name, $password,$database_name);
 $sql= "SELECT username FROM user WHERE username='$username'";

@@ -26,10 +26,10 @@ if($_SESSION["loggedin"]=="true"){
 
 
 <?php
-$server_name = "localhost";
-$user_name = "root";
-$password = "";
-$database_name = "forumsdb";
+$host = 'cosc360.ok.ubc.ca';
+$username = '59919308';
+$password = '59919308';
+$dbname = 'db_59919308';
 $connection = mysqli_connect($server_name, $user_name, $password,$database_name);
 $sql= "SELECT post.pid,user.username,post.title,post.body,user.country FROM user CROSS JOIN post ON user.uid=post.uid";
 $result= mysqli_query($connection,$sql);
