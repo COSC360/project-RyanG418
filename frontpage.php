@@ -28,7 +28,7 @@ if($_SESSION["loggedin"]=="true"){
 <?php
 $host = 'cosc360.ok.ubc.ca';
 $username = '59919308';
-$password = '59919308';
+$password = 'RYANGRANT418';
 $dbname = 'db_59919308';
 $connection = mysqli_connect($server_name, $user_name, $password,$database_name);
 $sql= "SELECT post.pid,user.username,post.title,post.body,user.country FROM user CROSS JOIN post ON user.uid=post.uid";

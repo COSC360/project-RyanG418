@@ -1,7 +1,7 @@
 <?php
 $host = 'cosc360.ok.ubc.ca';
 $username = '59919308';
-$password = '59919308';
+$password = 'RYANGRANT418';
 $dbname = 'db_59919308';
 $connection = mysqli_connect($server_name, $user_name, $password,$database_name);
 $query = "CREATE TABLE  user(

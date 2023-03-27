@@ -28,7 +28,7 @@
 
 $host = 'cosc360.ok.ubc.ca';
 $username = '59919308';
-$password = '59919308';
+$password = 'RYANGRANT418';
 $dbname = 'db_59919308';
 $username=$_POST['username'];
 $connection = mysqli_connect($server_name, $user_name, $password,$database_name);
