@@ -7,7 +7,7 @@
 <body>
 <main>
 <?php
-if($_SESSION["loggedin"]=="true"){
+if(isset($_SESSION["username"])){
     $hidden1="hidden";
     $hidden2="";
 }else{
@@ -15,8 +15,9 @@ if($_SESSION["loggedin"]=="true"){
     $hidden2="hidden";
 }
 ?>
-<button <?php echo $hidden1;?> onclick='window.location.href="login.html";'>Login</button>
-<button <?php echo $hidden1;?> onclick='window.location.href="registration.html";'>Registration</button>
+<button onclick='window.location.href="frontpage.php";'>Home</button>
+<button <?php echo $hidden1;?> onclick='window.location.href="login.php";'>Login</button>
+<button <?php echo $hidden1;?> onclick='window.location.href="registration.php";'>Registration</button>
 <button <?php echo $hidden2;?> onclick="window.location.href='logout.php';">Log Out</button>
 <h1>New Post:</h1>
 <form name="newpost" action="post.php" onsubmit="return validatePost()" method="post">

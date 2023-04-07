@@ -1,8 +1,7 @@
 body{
-   
 }
 .form{
-    align-content: center;
+    align-content: left;
     margin:auto;
     width:50%;
 }
@@ -19,16 +18,21 @@ footer{
     width: 100%;
     min-height:100px;
 }
-.wrapper {
-    width: 50%;
-    margin: 0 auto;
-    background: #e7e7e7;
-  }
-.content {
+#wrapper{
+    float: none;
+}
+.content{
     width: 60%;
-    float: left;
+    align-content:center;
+    background-color: aqua ;
+    vertical-align: text-top;
 }
 textarea {
     width: 250px;
     height: 10em;
-    }
+}
+img{
+    flex-wrap: wrap;
+    width:5em;
+    height: 5em;
+}
